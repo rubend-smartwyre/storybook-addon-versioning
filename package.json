@@ -91,5 +91,9 @@
       "vue",
       "angular"
     ]
+  },
+  "dependencies": {
+    "@storybook/addons": "^7.6.3",
+    "@storybook/api": "^7.6.3"
   }
 }

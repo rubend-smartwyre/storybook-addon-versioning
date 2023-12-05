@@ -1970,6 +1970,23 @@
   dependencies:
     "memoizerific" "^1.11.3"
 
+"@storybook/addons@^7.6.3":
+  "integrity" "sha512-UuqMOcr+x+4ogtn889wGgVAFxswHjN8ybD6ZTuRatLXA3YC2aywKGL1Xz0bmrTfv5WTlNxOPuwoTIhIH/P073w=="
+  "resolved" "https://registry.npmjs.org/@storybook/addons/-/addons-7.6.3.tgz"
+  "version" "7.6.3"
+  dependencies:
+    "@storybook/manager-api" "7.6.3"
+    "@storybook/preview-api" "7.6.3"
+    "@storybook/types" "7.6.3"
+
+"@storybook/api@^7.6.3":
+  "integrity" "sha512-efGmCIlVTTN1rlCULfZcnNGBLm3BwrVUJJR8hdXtghz7Lpac5TVRJ9P9Rdx17cF/rmv7XZP9tycvah3GMoL+Cg=="
+  "resolved" "https://registry.npmjs.org/@storybook/api/-/api-7.6.3.tgz"
+  "version" "7.6.3"
+  dependencies:
+    "@storybook/client-logger" "7.6.3"
+    "@storybook/manager-api" "7.6.3"
+
 "@storybook/blocks@7.6.3":
   "integrity" "sha512-EyjyNNCZMcV9UnBSujwduiq+F1VLVX/f16fTTPqqZOHigyfrG5LoEYC6dwOC4yO/xfWY+h3qJ51yiugMxVl0Vg=="
   "resolved" "https://registry.npmjs.org/@storybook/blocks/-/blocks-7.6.3.tgz"

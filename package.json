@@ -11,11 +11,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/silversonicaxel/storybook-addon-versioning"
+    "url": "https://github.com/rubend-smartwyre/storybook-addon-versioning"
   },
   "author": {
-    "name": "Alessandro (silversonicaxel) Rabitti",
-    "url": "https://github.com/silversonicaxel"
+    "name": "Ruben Donovan",
+    "url": "https://github.com/rubend-smartwyre"
   },
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,9 +37,9 @@
     "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
     "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
     "start": "concurrently \"yarn build:watch\" \"yarn storybook -- --no-manager-cache --quiet\"",
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook build",
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs"
@@ -50,8 +50,9 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.13.0",
-    "@storybook/addon-essentials": "^6.4.0",
-    "@storybook/react": "^6.4.0",
+    "@storybook/addon-essentials": "^7.6.3",
+    "@storybook/react": "^7.6.3",
+    "@storybook/react-webpack5": "7.6.3",
     "auto": "^10.3.0",
     "babel-loader": "^8.1.0",
     "boxen": "^5.0.1",
@@ -62,15 +63,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
+    "storybook": "7.6.3",
     "typescript": "^4.2.4",
     "zx": "^1.14.1"
   },
   "peerDependencies": {
-    "@storybook/addons": "^6.4.0",
-    "@storybook/api": "^6.4.0",
-    "@storybook/components": "^6.4.0",
-    "@storybook/core-events": "^6.4.0",
-    "@storybook/theming": "^6.4.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
@@ -93,7 +90,6 @@
     "unsupportedFrameworks": [
       "vue",
       "angular"
-    ],
-    "icon": "https://raw.githubusercontent.com/silversonicaxel/storybook-addon-versioning/main/icon.png?token=GHSAT0AAAAAABP3W4WMKXQMTM5BH3XXX3MWYPTECQA"
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "storybook-version-7.6.3",
+  "name": "storybook-version-updated",
   "version": "1.0.0",
   "description": "Add package or component version to the Storybook toolbar v7.6.3",
   "keywords": [
@@ -80,7 +80,8 @@
     }
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "rubend:registry": "https://npm.pkg.github.com"
   },
   "storybook": {
     "displayName": "Addon Version",
